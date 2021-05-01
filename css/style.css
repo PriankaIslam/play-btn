@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*================play-btn=============*/
+.play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+.play-btn a{
+    font-size: 25px;
+    color: white;
+    width: 130px;
+    background: #4541d6;
+    height: 130px;
+    display: block;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 50%;
+    position: relative;
+}
+.play-btn a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    background: #4641d6d5;
+    left: 0;
+    border-radius: 50%;
+    animation: play .9s ease-in-out infinite;
+}
+@keyframes play{
+   0%{
+       transform:translateZ(0) scale(1);
+       opacity: 1;
+   }
+  
+   100%{
+    transform: translateZ(0) scale(1.5);
+    opacity: 0;
+   }
+}
+
